@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VariablesViewState
+   version = "1.0">
+   <ContextStates>
+      <ContextState
+         contextName = "LoginViewController.onLoginPressed(_:):LoginViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "((email != nil || email?.isEmpty == false) &amp;&amp; (password != nil || password?.isEmpty == false))">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+   </ContextStates>
+</VariablesViewState>
