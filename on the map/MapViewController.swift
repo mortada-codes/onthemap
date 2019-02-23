@@ -26,17 +26,11 @@ class MapViewController: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         addPinsToMap()
     }
-
-}
-
-
-extension MapViewController {
     
     
-  
     func loadPins(){
         self.pinService.studentLocation(errorCallback: { (err) in
-         
+            
         }, onSuccess: { (data) in
             DispatchQueue.main.async {
                 let appDelegate =  UIApplication.shared.delegate as! AppDelegate
@@ -48,14 +42,14 @@ extension MapViewController {
                 }))
                 
             }
-       
+            
         })
     }
     
     
     func addPinsToMap(){
         let appDelegate =  UIApplication.shared.delegate as! AppDelegate
-       let pins =  appDelegate.pins
+        let pins =  appDelegate.pins
         
         self.mapView.addAnnotations((pins?.filter({ (s) -> Bool in
             return s.firstName != nil && s.latitude != nil && s.longitude != nil
@@ -64,7 +58,11 @@ extension MapViewController {
         }))!)
         
     }
+
 }
+
+
+
 
 
 extension MapViewController:MKMapViewDelegate{
@@ -95,9 +93,14 @@ extension MapViewController:MKMapViewDelegate{
     
     func mapView(_ mapView: MKMapView, annotationView view: MKAnnotationView, calloutAccessoryControlTapped control: UIControl) {
                 let annotation = view.annotation as! StudentMarker
-        if let url  = annotation.subtitle {
-            UIApplication.shared.open(URL(string:url)!)
-            
+    
+        
+        if let urlString = annotation.subtitle {
+            if let url = URL(string:urlString) {
+                UIApplication.shared.open(url)
+            }else{
+                UIApplication.shared.open(URL(string:"https://www.google.com/search?q=\(urlString)")!)
+            }
         }
     
     }

@@ -39,8 +39,12 @@ class PinsTableViewController : UITableViewController{
         return view!
     }
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        if let url = pins[indexPath.row].mediaURL{
-            UIApplication.shared.open(URL(string:url)!)
+        if let urlString = pins[indexPath.row].mediaURL{
+            if let url = URL(string:urlString) {
+            UIApplication.shared.open(url)
+            }else{
+                UIApplication.shared.open(URL(string:"https://www.google.com/search?q=\(urlString)")!)
+            }
         }
     }
     

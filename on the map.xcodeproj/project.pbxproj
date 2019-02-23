@@ -16,6 +16,7 @@
 		2E98D4572170C0AB00EA59E4 /* PinService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E98D4562170C0AB00EA59E4 /* PinService.swift */; };
 		2E98D4592170C0C700EA59E4 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E98D4582170C0C700EA59E4 /* AuthService.swift */; };
 		2E98D45B2170C0E300EA59E4 /* StudentInformation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E98D45A2170C0E300EA59E4 /* StudentInformation.swift */; };
+		2EE3054822214777002D5A29 /* UIViewControllerAlerts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EE3054722214777002D5A29 /* UIViewControllerAlerts.swift */; };
 		2EE5AC1A20E79B0F00E62E31 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EE5AC1920E79B0F00E62E31 /* AppDelegate.swift */; };
 		2EE5AC1C20E79B0F00E62E31 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EE5AC1B20E79B0F00E62E31 /* MapViewController.swift */; };
 		2EE5AC1F20E79B0F00E62E31 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2EE5AC1D20E79B0F00E62E31 /* Main.storyboard */; };
@@ -35,6 +36,7 @@
 		2E98D4562170C0AB00EA59E4 /* PinService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PinService.swift; sourceTree = "<group>"; };
 		2E98D4582170C0C700EA59E4 /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
 		2E98D45A2170C0E300EA59E4 /* StudentInformation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentInformation.swift; sourceTree = "<group>"; };
+		2EE3054722214777002D5A29 /* UIViewControllerAlerts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerAlerts.swift; sourceTree = "<group>"; };
 		2EE5AC1620E79B0F00E62E31 /* on the map.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "on the map.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2EE5AC1920E79B0F00E62E31 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2EE5AC1B20E79B0F00E62E31 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
@@ -93,6 +95,7 @@
 				2E64295122160C0F00CB16BE /* MapTabbarController.swift */,
 				2EEE66CE22173A2F00938586 /* UserAccount.swift */,
 				2EEE66D22218222700938586 /* PinMarkerView.swift */,
+				2EE3054722214777002D5A29 /* UIViewControllerAlerts.swift */,
 			);
 			path = "on the map";
 			sourceTree = "<group>";
@@ -177,6 +180,7 @@
 				2E98D4532170BE8E00EA59E4 /* PinsTableViewController.swift in Sources */,
 				2EE5AC1C20E79B0F00E62E31 /* MapViewController.swift in Sources */,
 				2E64294E2215E26A00CB16BE /* StudentMarker.swift in Sources */,
+				2EE3054822214777002D5A29 /* UIViewControllerAlerts.swift in Sources */,
 				2EEE66CF22173A2F00938586 /* UserAccount.swift in Sources */,
 				2E6429502216002400CB16BE /* AddLocationViewController.swift in Sources */,
 				2EE5AC1A20E79B0F00E62E31 /* AppDelegate.swift in Sources */,

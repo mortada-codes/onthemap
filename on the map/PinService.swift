@@ -10,7 +10,7 @@ import Foundation
 
 class PinService {
     
-    let STUDENT_URL: String = "https://parse.udacity.com/parse/classes/StudentLocation";
+    let STUDENT_URL: String = "https://parse.udacity.com/parse/classes/StudentLocation?order=-updatedAt";
    
        let urlSession = URLSession.shared
     func studentLocation(errorCallback:@escaping (_ e:Error?)->Void,onSuccess:@escaping (_ data:Result)->Void){

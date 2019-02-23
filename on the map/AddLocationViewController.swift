@@ -97,8 +97,18 @@ extension AddLocationViewController :MKMapViewDelegate{
         CLGeocoder().geocodeAddressString(address, completionHandler: { placemarks, error in
             self.dismissLoadingAlert()
             if (error != nil) {
+                DispatchQueue.main.async {
                 self.errorAlertMessage(message: "Location not found")
+                }
+              
                 return
+            }
+            
+            if(placemarks == nil || (placemarks != nil && (placemarks?.isEmpty)!)){
+                DispatchQueue.main.async {
+                    self.errorAlertMessage(message: "Location not found")
+                }
+                
             }
             
             

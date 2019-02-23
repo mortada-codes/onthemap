@@ -19,30 +19,17 @@ class AddPinViewController :UIViewController{
     @IBAction func onCancelAction(_ sender: Any) {
             self.dismiss(animated: true)
     }
-    override func viewDidLoad() {
-        
-    }
-    
-    
-    
+ 
+
     @IBAction func findLocationPressed(_ sender: Any) {
    
-        guard let  location  = tfLocation.text else {
-       
+        guard let  location  = tfLocation.text,!location.isEmpty  else {
+            alertMessage(message: "Enter your location")
             return
         }
+
         
-        guard !location.isEmpty else {
-                 alertMessage(message: "Enter your location")
-            return
-        }
-        
-        guard let website = tfWebsite.text else {
-           
-            return
-        }
-        
-        guard  !website.isEmpty else {
+        guard let website = tfWebsite.text ,  !website.isEmpty else {
              alertMessage(message: "Enter your website")
             return
         }
